@@ -1,0 +1,52 @@
+{
+    "name": "repro-so-45123536",
+    "version": "0.0.0",
+    "description": "Test cases for StackOverflow question 45123536",
+    "homepage": "https://github.com/sholladay/repro-so-45123536",
+    "main": "index.js",
+    "author": {
+        "name": "Seth Holladay",
+        "url": "https://seth-holladay.com",
+        "email": "me@seth-holladay.com"
+    },
+    "scripts": {
+        "test": "xo && ava"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:sholladay/repro-so-45123536.git"
+    },
+    "bugs": {
+        "url": "https://github.com/sholladay/repro-so-45123536/issues",
+        "email": "me@seth-holladay.com"
+    },
+    "engines": {
+        "node": ">=8"
+    },
+    "license": "MPL-2.0",
+    "files": [
+        "index.js"
+    ],
+    "dependencies": {
+        "joi": "^13.0.1"
+    },
+    "devDependencies": {
+        "ava": "^0.22.0",
+        "eslint-config-tidy": "^0.5.0",
+        "xo": "^0.18.0"
+    },
+    "keywords": [
+        "repro"
+    ],
+    "xo": {
+        "extend": "tidy",
+        "overrides": [
+            {
+                "files": "test.js",
+                "rule": {
+                    "no-undefined": "off"
+                }
+            }
+        ]
+    }
+}
